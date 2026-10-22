@@ -1,8 +1,9 @@
 # Worked example: Fix path, Overdue Organizer
 
-The Fix path in one reply. The teammate is the public **Overdue Organizer** listing on
-[aiteammates.directory](https://aiteammates.directory/agents/overdue-organizer): when a task
-is 3 days overdue, it comments with 2–3 realistic rescheduling options for the assignee.
+The Fix path in one reply. The teammate is the original public **Overdue Organizer** listing on
+[aiteammates.directory](https://aiteammates.directory/agents/overdue-organizer), our directory: when a task
+is 3 days overdue, it comments with 2–3 realistic rescheduling options for the assignee. The
+listing now carries the fixed guidance below.
 
 ## The request
 

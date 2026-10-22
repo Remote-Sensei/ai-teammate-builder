@@ -5,8 +5,9 @@ from what the team decided (empty required fields, wrong names, wrong section, n
 nudges the person with a link to the exact convention. Once a week it summarises adherence
 for the people who own the conventions.
 
-The starting point is the public **Convention Keeper** listing on
-[aiteammates.directory](https://aiteammates.directory/agents/convention-keeper). It's a good
+The starting point was the original public **Convention Keeper** listing on
+[aiteammates.directory](https://aiteammates.directory/agents/convention-keeper), our directory
+(the listing now carries this build's guidance and Skills). It was a good
 design, which makes it a useful example: the process below doesn't rewrite it from scratch,
 it finds the handful of places where a good-sounding instruction would fail in real use and
 fixes those. Replace every `[placeholder]` with yours; the readiness audit decides what your
@@ -28,7 +29,7 @@ If your team has no written conventions yet, that's the blocker: start from
 
 ## What changed from the directory version, and why
 
-| Directory version | Problem in real use | This build |
+| Original directory version | Problem in real use | This build |
 |---|---|---|
 | "Re-triggers on every task update" as a project collaborator | Asana documents that updates *can* re-run a teammate on work it collaborates on (completion, key field changes), and that comments *may* trigger it only when directed at it (documented as of Jun 2026). Being a project member isn't the same as collaborating on every task, so the coverage isn't guaranteed, and where it does work, every run is a chance to add a comment. | No unprompted nudges between reviews. People can ask for a check any time with an @mention. The weekly review is the one place unprompted nudges come from, capped and deduplicated. |
 | "Cannot do: reassign tasks, complete tasks…" written in the guidance | The platform *can* do these; the list is a policy, not a limit. | **Commenter** on monitored projects, **Editor** only on Work Conventions. Commenter has documented holes: if the teammate is *assigned* a monitored task, or the task is multi-homed in a project where it's Editor, it can edit it. So it is never assigned monitored tasks, and seed test D1 attempts an edit. |
