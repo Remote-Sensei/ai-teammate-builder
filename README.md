@@ -1,7 +1,7 @@
 # ai-teammate-builder
 
 An agent skill for designing, building, testing and fixing Asana AI Teammates from outside
-Asana, in Claude Code, Codex or Claude.ai.
+Asana, in Claude Code, ChatGPT.
 
 It walks your agent through the same steps a good manager uses to onboard a new hire. It reads
 your Asana data first, then interviews you and audits whether the workspace is ready. It writes
