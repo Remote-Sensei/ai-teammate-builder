@@ -9,9 +9,6 @@ the behavior guidance and Asana-format Skill files (ready for *Create skill → 
 plans access and triggers, and writes test tasks with pass bars. You paste the result into
 Asana and switch triggers on last.
 
-Want a starting point? Browse ready-made teammates in the
-[AI Teammates Directory](https://aiteammates.directory).
-
 Three paths, picked from your request:
 
 | You say | You get |
@@ -19,6 +16,9 @@ Three paths, picked from your request:
 | "Build / set up a teammate for X" | A paste-ready kit: guidance, Skills, attachments, test tasks, setup order |
 | "My teammate keeps doing X wrong" | One reply: diagnosis, replacement guidance, permission changes, before/after test prompts |
 | "Review our teammate" | A short scored review with the top fixes |
+
+Want a starting point? Browse ready-made teammates in the
+[AI Teammates Directory](https://aiteammates.directory).
 
 ## Install
 
