@@ -181,6 +181,10 @@ For any bulk change the teammate could make (cleanup, re-dating, re-sectioning),
 it lists the bulk changes it would make and makes none of them. The user flips it to `apply`
 after reviewing a couple of runs. `apply` never widens authority: ask-first and never rules
 still hold. It costs one line and makes the first week safe.
+Say in that same paragraph how a *direct* request is handled under propose, because the
+teammate otherwise treats "move these dates" as permission: a small, named ask (up to ~5
+tasks) is done; "all", a whole section or anything larger is listed and waits for `apply`;
+deletes always wait. Without it, a propose-mode teammate moved 9 due dates on one direct ask.
 
 ### 4 — Design & write
 
@@ -344,4 +348,3 @@ To share the result (a community forum, a client, a template library), follow
 `references/publishing.md`: strip names, IDs, URLs and internal jargon, turn specifics into
 `[placeholders]` with a one-line hint, keep the readiness checklist and evals, and say what was
 tested and what was not.
-

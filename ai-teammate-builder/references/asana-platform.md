@@ -36,7 +36,9 @@ Customize tab layout: **Behavior** (tabs *Instructions* and *Skills*), **Access*
 
 API: `GET /agents/{gid}` returns `name, description, behavior_guidance` (read). It does not
 return the teammate's access list, Skills or memory — read those in the Customize tab or ask
-the user. Treat the UI as the write path for guidance, Skills, access and sharing.
+the user. Treat the UI as the write path for guidance, Skills, access and sharing
+(`PUT /agents/{gid}` returns 404, observed Oct 2026). After pasting, verify the saved text with
+`GET /agents/{gid}?opt_fields=behavior_guidance`.
 
 ## 2. Skills
 
@@ -94,6 +96,14 @@ Rules also have time-based triggers, e.g. *Task is overdue* N days after the due
 for events after the rule was created.
 
 Activity: **View activity** shows what it is doing; you can interrupt in the task thread.
+
+**Triggering from outside Asana** (a scheduled agent, n8n, a script; observed Oct 2026): an
+@mention posted through the API (`html_text` with the teammate's gid) renders as a plain link
+and does **not** trigger it. Assigning it a task or subtask through the API does
+(`PUT /tasks/{gid}` with `assignee: <agent gid>`), even though the response shows
+`assignee: null`. So an outside agent hands work over by assigning a task, with the request in
+its description. A real trigger "likes" the task within seconds, which is a quick check.
+Runs are slow: 13–22 min on a 160-task project.
 
 ## 4. Access control, approvals, memory
 
@@ -166,3 +176,11 @@ adding — several overlap and explicitly hand off to each other ("Do NOT use �
 - Tasks multi-homed across a backlog and a sprint board: decide which project is canonical
   for status, and give the teammate access to both, or it will report half the picture.
 - It cannot create the custom field your process needs — humans set up fields first.
+- The Google Drive app reads Google Docs and PDFs, but not Markdown or plain-text files
+  (tested four ways, Oct 2026). Keep a Google Doc copy of any `.md` the teammate must read; a
+  small Apps Script on a time trigger can convert it with no AI in the loop.
+- Pasting through a browser automation: the rich Instructions editor collapses newlines when a
+  value is set programmatically, and turns Markdown into its own formatting as you type. Type
+  the text instead, with `•` for bullets, `☐` for checkboxes, `1)` for numbered steps, and no
+  code fences. A file picker may be unreachable, so put shared conventions into Instructions
+  (always loaded) rather than a Skill attachment.
