@@ -51,8 +51,10 @@ sprint, the section/page it belongs to, and links instead of "see above".
 - Delivery format (comment, subtasks, doc).
 
 If a task cannot be made ready from what is in Asana, the teammate does **not** guess. It
-creates a subtask "Answer: <one question>" for the person who can, and leaves the parent
-open.
+creates a subtask "Answer: <one question>" **under the task it concerns** (not a new top-level
+task) for the person who can, and leaves the parent open. Cap it per run: a sweep over a messy
+project otherwise creates one question per gap (15 in one real first run). At most ~5 per run,
+nearest due dates first; the rest go into one grouped "Answer:" listing them.
 
 ## The feedback loop
 

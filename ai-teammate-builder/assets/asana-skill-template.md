@@ -25,7 +25,9 @@ output is ready to [where it is used — e.g. paste into sprint planning, read o
    owners, dates — before asking anything.
 2. [Identify scope: which sprint/section/time window. Confirm if ambiguous.]
 3. [Check criteria a, b, c, d — from the attached conventions / definition of ready.]
-4. Ask only what the data cannot answer. [Typical question.]
+4. Ask only what the data cannot answer. [Typical question.] Each question is an "Answer:"
+   subtask under the task it concerns; at most [5] per run, nearest due dates first, the rest
+   grouped into one "Answer:" that lists them.
 5. Confirm delivery format if not set by the trigger.
 
 ### Workflow
